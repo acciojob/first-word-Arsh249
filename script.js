@@ -2,7 +2,7 @@ function firstWord(s) {
   if(s.indexOf(' ') == -1 || s.length == 0)
 	  return s;
  let str = "";
-	for (let i = 0; i < s.length; i++) {
+	for (let i = 0; i < s.length-1; i++) {
 		if(s[i] == " "){
 			return str;
 		}
@@ -11,7 +11,7 @@ function firstWord(s) {
 		}
 	}
 }
- 
+  
 // Do not change the code below
 
 const s = prompt("Enter String:");
