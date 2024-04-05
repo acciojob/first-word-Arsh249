@@ -1,18 +1,11 @@
 function firstWord(s) {
   if(s.indexOf(' ') == -1 || s.length == 0)
 	  return s;
- let str = "";
-	for (let i = 0; i < s.length-1; i++) {
-		if(s[i] == " "){
-			return str;
-		}
-		else{
-			str+=s[i];
-		}
-	}
+ let str = s.split(" ")[0];
+	return str;
 }
   
 // Do not change the code below
-
+ 
 const s = prompt("Enter String:");
 alert(firstWord(s));
